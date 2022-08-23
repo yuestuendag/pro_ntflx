@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Netflix</title>
+    <style>
+        :root {
+            --primary-color: #e50914;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            -webkit-font-smoothing: antialiased;
+            background: #000;
+            color: #999;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            color: #fff;
+
+        }
+
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        p {
+            margin: 0.5rem 0;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .showcase {
+            width: 100%;
+            height: 93vh;
+            position: relative;
+            background: url('https://i.ibb.co/vXqDmnh/background.jpg') no-repeat center center/cover;
+        }
+
+        .showcase::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            background: rgba(0, 0, 0, 0.6);
+            box-shadow: inset 120px 100px 250px #000000, inset -120px -100px 250px #000000;
+        }
+
+        .showcase-top {
+            position: relative;
+            z-index: 2;
+            height: 90px;
+        }
+
+        .showcase-top img {
+            width: 170px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .showcase-top a {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translate(-50%, -50%);
+        }
+
+        .showcase-content {
+            position: relative;
+            z-index: 2;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin-top: 9rem;
+
+        }
+
+        .showcase-content h1 {
+            font-weight: 700;
+            font-size: 3rem;
+            line-height: 1.30;
+            margin: 0 0 2rem;
+        }
+
+        .showcase p {
+            text-transform: uppercase;
+            color: #fff;
+            font-weight: 500;
+            font-size: 1.25rem;
+            line-height: 1.25;
+            margin: 0 02rem;
+
+        }
+
+        /*Button*/
+        .btn {
+            display: inline-block;
+            background: var(--primary-color);
+            color: #fff;
+            padding: 0.4rem 1.3rem;
+            font-size: 1rem;
+            text-align: center;
+            border: none;
+            cursor: pointer;
+            margin-right: 0.5rem;
+            outline: none;
+            box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
+            border-radius: 2px;
+        }
+
+        .btn:hover {
+            opacity: 0.9;
+
+        }
+
+        .btn-rounded {
+            border-radius: 5px;
+
+        }
+
+        .btn-xl {
+            font-size: 2rem;
+            padding: 1.5rem 2.1rem;
+            text-transform: uppercase;
+
+        }
+
+        .btn-lg {
+            font-size: 1rem;
+            padding: 0.8rem 1.3rem;
+            text-transform: uppercase;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <header class="showcase">
+        <div class="showcase-top">
+            <img src="logo.png" alt="Netflix">
+            <a href="#" class="btn btn-rounded">Sign In</a>
+        </div>
+        <div class="showcase-content">
+            <br>
+            <h1>Unbegrenzt Filme, Serien und mehr</h1></br>
+            <p> Wo immer Sie möchten. Jederzeit kündbar.</p>
+            <a href="#" class="btn btn-xl">
+                Watch free 3 Days <i class="fas fa-chevron-right btn-icon"></i>
+            </a>
+        </div>
+        <section class="tabs">
+            <div class="container">
+                <div id="tab-1 " class="tab-item">
+
+                </div>
+
+            </div>
+
+        </section>
+    </header>
+</body>
+
+</html>
